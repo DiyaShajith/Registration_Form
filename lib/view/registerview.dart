@@ -100,51 +100,6 @@ class _RegisterviewState extends State<Registerview> {
                   ],
                 ),
                 const SizedBox(height: 20),
-                Text(
-                  "Email",
-                  style: TextStyle(
-                      color: Colors.grey[500],
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500),
-                ),
-                const SizedBox(height: 10),
-                TextFormField(
-                  controller: _emailController,
-                  decoration: const InputDecoration(
-                      labelText: "Email", border: OutlineInputBorder()),
-                  keyboardType: TextInputType.emailAddress,
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter an email';
-                    }
-
-                    return null;
-                  },
-                ),
-                const SizedBox(height: 20),
-                Text(
-                  "Password",
-                  style: TextStyle(
-                      color: Colors.grey[500],
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500),
-                ),
-                const SizedBox(height: 10),
-                TextFormField(
-                  obscureText: true,
-                  controller: _passwordController,
-                  decoration: const InputDecoration(
-                      labelText: "password", border: OutlineInputBorder()),
-                  keyboardType: TextInputType.visiblePassword,
-                  validator: (value) {
-                    if (value == null || value.isEmpty) {
-                      return 'Please enter an strong password';
-                    }
-
-                    return null;
-                  },
-                ),
-                const SizedBox(height: 20),
                 Row(
                   children: [
                     Text(
@@ -201,6 +156,51 @@ class _RegisterviewState extends State<Registerview> {
                       ),
                     ),
                   ],
+                ),
+                const SizedBox(height: 20),
+                Text(
+                  "Email",
+                  style: TextStyle(
+                      color: Colors.grey[500],
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500),
+                ),
+                const SizedBox(height: 10),
+                TextFormField(
+                  controller: _emailController,
+                  decoration: const InputDecoration(
+                      labelText: "Email", border: OutlineInputBorder()),
+                  keyboardType: TextInputType.emailAddress,
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please enter an email';
+                    }
+
+                    return null;
+                  },
+                ),
+                const SizedBox(height: 20),
+                Text(
+                  "Password",
+                  style: TextStyle(
+                      color: Colors.grey[500],
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500),
+                ),
+                const SizedBox(height: 10),
+                TextFormField(
+                  obscureText: true,
+                  controller: _passwordController,
+                  decoration: const InputDecoration(
+                      labelText: "password", border: OutlineInputBorder()),
+                  keyboardType: TextInputType.visiblePassword,
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please enter an strong password';
+                    }
+
+                    return null;
+                  },
                 ),
                 const SizedBox(height: 50),
                 Center(
